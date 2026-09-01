@@ -1,0 +1,213 @@
+.about-page {
+  background: #080d1b;
+}
+
+.about-hero {
+  width: min(1180px, calc(100% - 48px));
+  min-height: 650px;
+  margin: auto;
+  padding: 90px 0;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  align-items: center;
+  gap: 80px;
+}
+
+.about-hero-copy h1 {
+  margin: 20px 0;
+  font-size: clamp(3rem, 5vw, 4.8rem);
+  line-height: 1.08;
+  letter-spacing: -3px;
+}
+
+.about-hero-copy h1 span {
+  color: #27d8ff;
+}
+
+.about-hero-copy > p {
+  max-width: 650px;
+  margin-bottom: 30px;
+  font-size: 17px;
+}
+
+.about-actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.about-visual-grid {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  background: #10192d;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.35);
+}
+
+.about-stat {
+  min-height: 170px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 17px;
+  background: #162139;
+}
+
+.about-stat strong {
+  margin-bottom: 8px;
+  font-size: 38px;
+}
+
+.about-stat span {
+  color: #aab5cc;
+  font-size: 12px;
+}
+
+.about-stat-accent {
+  background: linear-gradient(135deg, #6257e8, #174e72);
+}
+
+.mission-section {
+  padding: 90px max(24px, calc((100% - 1180px) / 2));
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  background: #0c1222;
+}
+
+.mission-card {
+  padding: 42px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  background: #111a2e;
+}
+
+.mission-card > span,
+.value-card > span {
+  color: #27d8ff;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.mission-card h2 {
+  margin: 45px 0 15px;
+  font-size: 32px;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.value-card {
+  min-height: 240px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 18px;
+  background: #111a2e;
+}
+
+.value-card h3 {
+  margin: 45px 0 10px;
+}
+
+.process-section {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 80px;
+  background: #0c1222;
+}
+
+.process-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.process-card {
+  padding: 22px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  background: #111a2e;
+}
+
+.process-card > span {
+  width: 45px;
+  height: 45px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: rgba(108, 99, 255, 0.18);
+  color: #8a84ff;
+  font-weight: 800;
+}
+
+.process-card h3 {
+  margin: 0 0 5px;
+}
+
+.process-card p {
+  margin: 0;
+}
+
+.about-cta {
+  width: min(1180px, calc(100% - 48px));
+  margin: 80px auto;
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  border: 1px solid rgba(108, 99, 255, 0.35);
+  border-radius: 22px;
+  background: linear-gradient(135deg, #171a47, #10273c);
+}
+
+.about-cta h2 {
+  margin: 12px 0;
+  font-size: 40px;
+}
+
+@media (max-width: 900px) {
+  .about-hero,
+  .process-section {
+    grid-template-columns: 1fr;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .about-hero,
+  .about-cta {
+    width: calc(100% - 32px);
+  }
+
+  .about-hero {
+    padding: 65px 0;
+  }
+
+  .about-visual-grid,
+  .mission-section,
+  .values-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-actions,
+  .about-cta {
+    align-items: stretch;
+    flex-direction: column;
+  }
+}
