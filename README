@@ -2,13 +2,24 @@
 
 A full-stack technology services web application developed as a group project for the Small IT Business module.
 
-TechHive Software Solutions provides a modern platform where customers can explore technology services, submit service booking requests, send enquiries, and receive booking confirmations. The application also includes an administrative dashboard for viewing bookings and customer enquiries.
+## 📌 Project Overview
 
-## Project Overview
+TechHive Software Solutions is a technology services platform that allows customers to explore available services, submit service booking requests, receive booking confirmations, and send enquiries.
 
-The project was developed to demonstrate how a modern full-stack web application can integrate a responsive frontend, RESTful backend APIs, and a relational MySQL database.
+The application also includes an administrative dashboard for managing customer bookings and enquiries.
 
-### Application Flow
+## ✨ Features
+
+- 🛠️ Technology services catalogue
+- 📅 Customer service booking
+- ✅ Booking confirmation
+- 📩 Contact and enquiry system
+- 🖥️ Administrative dashboard
+- 📱 Responsive user interface
+- 🔗 Frontend and backend integration
+- 🗄️ MySQL database integration
+
+## 🏗️ Application Architecture
 
 ```text
 Customer
